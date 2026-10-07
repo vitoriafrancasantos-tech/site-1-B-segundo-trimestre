@@ -54,16 +54,15 @@
 </body>
 
 <script>
-    const botoes = document.querySelectorAll("main button");
-                    botoes.forEach(function  (botoes){
-        botoes.addEventListener("click", botaoClicado);
-
-        function botaoClicado() {
-        console.log("fui clicado");
-        let texto = botoes.querySelector("span");
-        texto.textContent++;
-}
-                    });
+ const botoes = document.querySelectorAll("main button");
+ botoes.forEach(function  (botoes){
+ botoes.addEventListener("click", botaoClicado);
+ function botaoClicado() {
+ console.log("fui clicado");
+ let texto = botoes.querySelector("span");
+ texto.textContent++;
+ }
+});
 
 </script>
 
